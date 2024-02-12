@@ -32,7 +32,7 @@ public abstract class Building {
     public void setRentPerMonth(double rent) {
         this.rentPerMonth = rent;
     }
-    public boolean isNeedRepairs() {
+    public boolean getNeedRepairs() {
         return this.needRepairs;
     }
     public void setNeedRepairs(boolean needRepairs) {

@@ -37,9 +37,47 @@ public class CommercialTest {
         assertThat(bakery.getBusinessType()).isEqualTo("pizzeria");
     }
 
+// A set of tests to test the Building parent class
 
 
+    @Test
+    public void canGetNumberOfRooms(){
+        assertThat(bakery.getNumberOfRooms()).isEqualTo(2);
+    }
 
+    @Test
+    public void canGetNumberOfFloors(){
+        assertThat(bakery.getNumberOfFloors()).isEqualTo(2);
+    }
+
+
+    @Test
+    public void canGetDateOfConstruction(){
+        assertThat(bakery.getDateOfConstruction()).isEqualTo("04/07/2015");
+    }
+
+    @Test
+    public void canGetRentPerMonth(){
+        assertThat(bakery.getRentPerMonth()).isEqualTo(100);
+    }
+
+    @Test
+    public void canSetRentPerMonth(){
+        bakery.setRentPerMonth(200);
+        assertThat(bakery.getRentPerMonth()).isEqualTo(200);
+    }
+
+    @Test
+    public void canGetNeedRepairs(){
+        assertThat(bakery.getNeedRepairs()).isEqualTo(false);
+    }
+
+    @Test
+    public void canSetNeedRepairs(){
+        bakery.setNeedRepairs(true);
+        assertThat(bakery.getNeedRepairs()).isEqualTo(true);
+    }
 
 
 }
+
