@@ -2,14 +2,14 @@ public abstract class Building {
     private int numberOfRooms;
     private String dateOfConstruction;
     private int numberOfFloors;
-    private double rentPrice;
+    private double rentPerMonth;
     private boolean needRepairs;
 
-    public Building(int numberOfRooms, int numberOfFloors, String dateOfConstruction, double rentPrice) {
+    public Building(int numberOfRooms, int numberOfFloors, String dateOfConstruction, double rentPerMonth) {
         this.numberOfRooms = numberOfRooms;
         this.numberOfFloors = numberOfFloors;
         this.dateOfConstruction = dateOfConstruction;
-        this.rentPrice = rentPrice;
+        this.rentPerMonth = rentPerMonth;
         this.needRepairs = false;
 
     }
@@ -26,11 +26,11 @@ public abstract class Building {
     }
 
 // Properties with both getters and setters
-    public double getRentPrice() {
-        return this.rentPrice;
+    public double getRentPerMonth() {
+        return this.rentPerMonth;
     }
-    public void setRentPrice(double rent) {
-        this.rentPrice = rent;
+    public void setRentPerMonth(double rent) {
+        this.rentPerMonth = rent;
     }
     public boolean isNeedRepairs() {
         return this.needRepairs;
